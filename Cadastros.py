@@ -1,8 +1,27 @@
 #------------MENU------------
-import math
-from time import sleep
-from playsound import playsound
-import ajuda
+import math 
+from time import sleep #timer
+from playsound import playsound #play music
+import ajuda #colocar linhas
+from lib.inter import * #menu
+from lib.arquivo import * #importar arquivo 
+
+arq = 'Dados dos clientes'
+
+if not arquivoExiste(arq):
+    criarArquivo(arq)
+
+while True:
+    resposta = menu(['Já tem uma conta?', 'Não tem uma conta?', 'Sair do Sistema!'])#se já tem uma conta pular a parte do cadastro e colocar para "entrar"
+    if resposta == 1:
+        lerArquivo(arq)
+    elif resposta == 2:
+        print()
+    elif resposta == 3:
+        print('Saindo do sistema!')
+        break
+    else:
+        print('\033[31mERRO! Digite uma opção valida\033[m')
 
 ajuda.lin()
 print('\033[1m', 'Bem vindo ao atendimento on-line!', '\033[m')
@@ -37,12 +56,12 @@ print('Com ela você pode ver sua posição na fila e quais e quantas pessoas es
 lista_de_espera = [['Lucas',  19], ['Caio', 19], ['Ana', 18], ['João',  19], ['Pedro',  19]]
 lista_de_espera.append(dados)
 for c in lista_de_espera:
-    print(c[0])
+    print(c[0])#colocar a idade 
 #sleep(1)
 
 ajuda.lin()
 #perguntar se a pessoas tem hora marcada, se sim mudar a posição dela na na lista
-manhã = 'AM'
+'''manhã = 'AM'
 noite = 'PM'
 seguir = 'Sim'
 proximo = 'Não'
@@ -52,14 +71,14 @@ while hm != 'Sim' and hm != 'Não':
 else:
     if hm == seguir:
         horário = int(input('Qual foi o horário mascado para a sua seção? \n(Por favor escrever em formato AM ou PM ex: 2, 3, 10, 12) '))#MELHORAR ESSA PERG
-        horas = 1 and 2 
-        #horas = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
+        #horas = 1  
+        horas = 1
         while horário != horas:
             int(input('Não entendi poderia repetir: '))
         else:
         #sleep(1)
             am_pm = input('Esta no horário AM ou PM? ').capitalize
-            while p1 != 'Sim' and p1 != 'Não':
+            while am_pm != 'AM' and am_pm != 'PM':
                 input('Não entendi poderia repetir: ')
             else:
                 if am_pm == manhã:
@@ -68,7 +87,7 @@ else:
                     print(f'Seu horário é {horário}PM')
     if hm == proximo:
         #len --> quantidade de itens em uma lista 
-        print(f'Sua possição é {len(lista_de_espera)}°.')
+        print(f'Sua possição é {len(lista_de_espera)}°.')'''
 
 #sleep(1)
 #playsound('ex021.mp3')
