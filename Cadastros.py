@@ -173,106 +173,106 @@ while True:
                 else:
                     print('Não encontramos o que você queria =-=*, poderia digitar novamente?')
                     #Fazer um loop
-            if escolha == proximo:
-                print('\033[1m', 'Problema com o atendimento?', '\033[1m')
-            lista_de_problemas2 = ( 
+                if escolha == proximo:
+                    print('\033[1m', 'Problema com o atendimento?', '\033[1m')
+                    lista_de_problemas2 = ( 
                     {'opção': '(0)Problema com um atendente.'} ,
                     {'opção': '(1)Atendimento ruim.'},
                     {'opção': '(2)Atendente falou uma coisa e era outra.'},
                     {'opção': '(3)Atendente não informal das taxas.'},
                     {'opção': '(4)Voltar.'}, '\033[m'
-                )  
-                #sleep(1)      
-            ajuda.lin()
-            print(lista_de_problemas2[0]['opção'])
-            print(lista_de_problemas2[1]['opção'])
-            print(lista_de_problemas2[2]['opção'])
-            print(lista_de_problemas2[3]['opção'])
-            print(lista_de_problemas2[4]['opção'])
-            ajuda.lin()
-            print('escolha das opção a cima de 0 até 4')
-            #sleep(1)
-            lista_de_problemas2 = escolha3 = int(input('Escreva a sua opção: '))
-            print(f'Você escolheu: {escolha3}.')
-            #Pergunta 4
-            while escolha3 == 4:
-                    escolha3 = print('Voltando para as perguntas!!')
-                #Pergunta 0
-            if lista_de_problemas2 == 0:
-                    print('Espere 1 minuto.')
+                    )  
+                    #sleep(1)      
+                    ajuda.lin()
+                    print(lista_de_problemas2[0]['opção'])
+                    print(lista_de_problemas2[1]['opção'])
+                    print(lista_de_problemas2[2]['opção'])
+                    print(lista_de_problemas2[3]['opção'])
+                    print(lista_de_problemas2[4]['opção'])
+                    ajuda.lin()
+                    print('escolha das opção a cima de 0 até 4')
                     #sleep(1)
-                    proximo2 = 'Sim'
-                    proximo3 = 'Não'
-                    p1 = input('... ').capitalize()
-                    while p1 != 'Sim' and p1 != 'Não':
-                        input('Não entendi poderia repetir: ')
+                    lista_de_problemas2 = escolha3 = int(input('Escreva a sua opção: '))
+                    print(f'Você escolheu: {escolha3}.')
+                    #Pergunta 4
+                    while escolha3 == 4:
+                        escolha3 = print('Voltando para as perguntas!!')
+                    #Pergunta 0
+                    if lista_de_problemas2 == 0:
+                        print('Espere 1 minuto.')
+                        #sleep(1)
+                        proximo2 = 'Sim'
+                        proximo3 = 'Não'
+                        p1 = input('... ').capitalize()
+                        while p1 != 'Sim' and p1 != 'Não':
+                            input('Não entendi poderia repetir: ')
+                        else:
+                            if p1 == proximo2:
+                                input('... ')
+                                input(int('... '))
+                                print('Fim da ocorreência, um e-mail foi enviado para você!!')
+                            if p1 == proximo3:
+                                print('Fim da ocorrência!!!')           
+                    #Pergunta 1
+                    elif lista_de_problemas2 == 1:
+                        print('Espere 1 minuto.')
+                        #sleep(1)
+                        proximo2 = 'Sim'
+                        proximo3 = 'Não'
+                        p2 = input('O seu problema não foi resolvido? ').capitalize()
+                        while p2 != 'Sim' and p2 != 'Não':
+                            input('Não entendi poderia repetir: ')
+                        else:
+                            if p2 == proximo2:
+                                input('... ')
+                                input(int('... '))
+                                print('Fim da ocorreência, um e-mail foi enviado para você!!')
+                            if p2 == proximo3:
+                                print('Fim da ocorrência!!!') 
+                    #Pergunta 2
+                    elif lista_de_problemas2 == 2:
+                        print('Espere 1 minuto.')
+                        #sleep(1)
+                        proximo2 = 'Sim'
+                        proximo3 = 'Não'
+                        p3 = input('... ').capitalize()
+                        while p3 != 'Sim' and p3 != 'Não':
+                            input('Não entendi poderia repetir: ')
+                        else:
+                            if p3 == proximo2:
+                                input('... ')
+                                input(int('... '))
+                                print('Fim da ocorreência, um e-mail foi enviado para você!!')
+                            if p3 == proximo3:
+                                print('Fim da ocorrência!!!')
+                    #Pergunta 3
+                    elif lista_de_problemas2 == 3:
+                        print('Espere 1 minuto.')
+                        #sleep(1)
+                        proximo2 = 'Sim'
+                        proximo3 = 'Não'
+                        p4 = input('... ').capitalize()
+                        while p4 != 'Sim' and p4 != 'Não':
+                            input('Não entendi poderia repetir: ')
+                        else:
+                            if p4 == proximo2:
+                                input('... ')
+                                input(int('... '))
+                                print('Fim da ocorreência, um e-mail foi enviado para você!!')
+                            if p4 == proximo3:
+                                print('Fim da ocorrência!!!')
+                    #Pergunta NENHUMA
                     else:
-                        if p1 == proximo2:
-                            input('... ')
-                            input(int('... '))
-                            print('Fim da ocorreência, um e-mail foi enviado para você!!')
-                        if p1 == proximo3:
-                            print('Fim da ocorrência!!!')           
-            #Pergunta 1
-            elif lista_de_problemas2 == 1:
-                    print('Espere 1 minuto.')
-                    #sleep(1)
-                    proximo2 = 'Sim'
-                    proximo3 = 'Não'
-                    p2 = input('O seu problema não foi resolvido? ').capitalize()
-                    while p2 != 'Sim' and p2 != 'Não':
-                        input('Não entendi poderia repetir: ')
-                    else:
-                        if p2 == proximo2:
-                            input('... ')
-                            input(int('... '))
-                            print('Fim da ocorreência, um e-mail foi enviado para você!!')
-                        if p2 == proximo3:
-                            print('Fim da ocorrência!!!') 
-                #Pergunta 2
-            elif lista_de_problemas2 == 2:
-                    print('Espere 1 minuto.')
-                    #sleep(1)
-                    proximo2 = 'Sim'
-                    proximo3 = 'Não'
-                    p3 = input('... ').capitalize()
-                    while p3 != 'Sim' and p3 != 'Não':
-                        input('Não entendi poderia repetir: ')
-                    else:
-                        if p3 == proximo2:
-                            input('... ')
-                            input(int('... '))
-                            print('Fim da ocorreência, um e-mail foi enviado para você!!')
-                        if p3 == proximo3:
-                            print('Fim da ocorrência!!!')
-                #Pergunta 3
-            elif lista_de_problemas2 == 3:
-                    print('Espere 1 minuto.')
-                    #sleep(1)
-                    proximo2 = 'Sim'
-                    proximo3 = 'Não'
-                    p4 = input('... ').capitalize()
-                    while p4 != 'Sim' and p4 != 'Não':
-                        input('Não entendi poderia repetir: ')
-                    else:
-                        if p4 == proximo2:
-                            input('... ')
-                            input(int('... '))
-                            print('Fim da ocorreência, um e-mail foi enviado para você!!')
-                        if p4 == proximo3:
-                            print('Fim da ocorrência!!!')
-                #Pergunta NENHUMA
-            else:
-                print('Não encontramos o que você queria =-=*, poderia digitar novamente?')
-                #Fazer um loop
+                        print('Não encontramos o que você queria =-=*, poderia digitar novamente?')
+                    #Fazer um loop
 
-        #if -> elif(infinito) -> else
+                    #if -> elif(infinito) -> else
 
         #------------PARTE 2 DA PERGUNTAS------------
-        print('\033[1m', 'Olá tudo bem? \nSeu problema foi resolvido? ', '\033[1m')
+        print('\033[1m', 'Olá tudo bem? \nSeu problema foi resolvido? ', '\033[m')
         seguir = 'Sim'
         proximo = 'Não'
-        escolha = input('\033[1m', 'Gostaria continuar comprando? ', '\033[1m')
+        escolha = input('Gostaria continuar comprando? ')
         while escolha != 'Sim' and escolha != 'Não':
             escolha = input('Não entendi poderia repetir, gostaria de comprar algum produto nosso? ').capitalize().strip
         else:
@@ -302,21 +302,7 @@ while True:
                 print(lista_de_produtos[7]['opção'])
                 print(lista_de_produtos[8]['opção'])
                 ajuda.lin()
-        
-                #adicionar um FOR para poder somar o valor dos produtos
-                s = 0
-                for c in range(10):
-                    n =  int(input('Digite o número dos produtos: '))
-                s += n #s = s + n (é a mesma coisa em python)
-                print('O valor final ficou {}'.format(s))
-        
-        
-            '''print('escolha das opção a cima de 0 até 8')
-                e1 = int(input('Digite a sua opção: '))
-                print(f'{e1}')'''
-
-            '''if escolha == 'Não':
-                print('Obrigado volte sempre!!')''' 
+    
     elif resposta == 2:
         cabeçalho('NOVO CADASTRO')
         nome = str(input('Nome: '))
@@ -481,32 +467,32 @@ while True:
                 else:
                     print('Não encontramos o que você queria =-=*, poderia digitar novamente?')
                     #Fazer um loop
-            if escolha == proximo:
-                print('\033[1m', 'Problema com o atendimento?', '\033[1m')
-            lista_de_problemas2 = ( 
-                    {'opção': '(0)Problema com um atendente.'} ,
-                    {'opção': '(1)Atendimento ruim.'},
-                    {'opção': '(2)Atendente falou uma coisa e era outra.'},
-                    {'opção': '(3)Atendente não informal das taxas.'},
-                    {'opção': '(4)Voltar.'}, '\033[m'
-                )  
-                #sleep(1)      
-            ajuda.lin()
-            print(lista_de_problemas2[0]['opção'])
-            print(lista_de_problemas2[1]['opção'])
-            print(lista_de_problemas2[2]['opção'])
-            print(lista_de_problemas2[3]['opção'])
-            print(lista_de_problemas2[4]['opção'])
-            ajuda.lin()
-            print('escolha das opção a cima de 0 até 4')
-            #sleep(1)
-            lista_de_problemas2 = escolha3 = int(input('Escreva a sua opção: '))
-            print(f'Você escolheu: {escolha3}.')
-            #Pergunta 4
-            while escolha3 == 4:
+                if escolha == proximo:
+                    print('\033[1m', 'Problema com o atendimento?', '\033[1m')
+                lista_de_problemas2 = ( 
+                        {'opção': '(0)Problema com um atendente.'} ,
+                        {'opção': '(1)Atendimento ruim.'},
+                        {'opção': '(2)Atendente falou uma coisa e era outra.'},
+                        {'opção': '(3)Atendente não informal das taxas.'},
+                        {'opção': '(4)Voltar.'}, '\033[m'
+                    )  
+                    #sleep(1)      
+                ajuda.lin()
+                print(lista_de_problemas2[0]['opção'])
+                print(lista_de_problemas2[1]['opção'])
+                print(lista_de_problemas2[2]['opção'])
+                print(lista_de_problemas2[3]['opção'])
+                print(lista_de_problemas2[4]['opção'])
+                ajuda.lin()
+                print('escolha das opção a cima de 0 até 4')
+                #sleep(1)
+                lista_de_problemas2 = escolha3 = int(input('Escreva a sua opção: '))
+                print(f'Você escolheu: {escolha3}.')
+                #Pergunta 4
+                while escolha3 == 4:
                     escolha3 = print('Voltando para as perguntas!!')
-                #Pergunta 0
-            if lista_de_problemas2 == 0:
+                    #Pergunta 0
+                if lista_de_problemas2 == 0:
                     print('Espere 1 minuto.')
                     #sleep(1)
                     proximo2 = 'Sim'
@@ -521,8 +507,8 @@ while True:
                             print('Fim da ocorreência, um e-mail foi enviado para você!!')
                         if p1 == proximo3:
                             print('Fim da ocorrência!!!')           
-            #Pergunta 1
-            elif lista_de_problemas2 == 1:
+                #Pergunta 1
+                elif lista_de_problemas2 == 1:
                     print('Espere 1 minuto.')
                     #sleep(1)
                     proximo2 = 'Sim'
@@ -538,7 +524,7 @@ while True:
                         if p2 == proximo3:
                             print('Fim da ocorrência!!!') 
                 #Pergunta 2
-            elif lista_de_problemas2 == 2:
+                elif lista_de_problemas2 == 2:
                     print('Espere 1 minuto.')
                     #sleep(1)
                     proximo2 = 'Sim'
@@ -554,7 +540,7 @@ while True:
                         if p3 == proximo3:
                             print('Fim da ocorrência!!!')
                 #Pergunta 3
-            elif lista_de_problemas2 == 3:
+                elif lista_de_problemas2 == 3:
                     print('Espere 1 minuto.')
                     #sleep(1)
                     proximo2 = 'Sim'
@@ -570,8 +556,8 @@ while True:
                         if p4 == proximo3:
                             print('Fim da ocorrência!!!')
                 #Pergunta NENHUMA
-            else:
-                print('Não encontramos o que você queria =-=*, poderia digitar novamente?')
+                else:
+                    print('Não encontramos o que você queria =-=*, poderia digitar novamente?')
                 #Fazer um loop
 
         #if -> elif(infinito) -> else
@@ -614,17 +600,18 @@ while True:
                 #adicionar um FOR para poder somar o valor dos produtos
                 s = 0
                 for c in range(10):
-                    n =  int(input('Digite o número dos produtos: '))
+                 n =  int(input('Digite o número dos produtos: '))
                 s += n #s = s + n (é a mesma coisa em python)
                 print('O valor final ficou {}'.format(s))
         
         
-            '''print('escolha das opção a cima de 0 até 8')
-                e1 = int(input('Digite a sua opção: '))
-                print(f'{e1}')'''
+                '''print('escolha das opção a cima de 0 até 8')
+                    e1 = int(input('Digite a sua opção: '))
+                    print(f'{e1}')'''
 
-            '''if escolha == 'Não':
-                print('Obrigado volte sempre!!')''' 
+                '''if escolha == 'Não':
+                    print('Obrigado volte sempre!!')''' 
+
     elif resposta == 3:
         print('Saindo do sistema!')
         break
