@@ -173,9 +173,9 @@ while True:
                 else:
                     print('Não encontramos o que você queria =-=*, poderia digitar novamente?')
                     #Fazer um loop
-                if escolha == proximo:
-                    print('\033[1m', 'Problema com o atendimento?', '\033[1m')
-                    lista_de_problemas2 = ( 
+            if escolha == proximo:
+                print('\033[1m', 'Problema com o atendimento?', '\033[1m')
+                lista_de_problemas2 = ( 
                     {'opção': '(0)Problema com um atendente.'} ,
                     {'opção': '(1)Atendimento ruim.'},
                     {'opção': '(2)Atendente falou uma coisa e era outra.'},
@@ -183,20 +183,20 @@ while True:
                     {'opção': '(4)Voltar.'}, '\033[m'
                     )  
                     #sleep(1)      
-                    ajuda.lin()
-                    print(lista_de_problemas2[0]['opção'])
-                    print(lista_de_problemas2[1]['opção'])
-                    print(lista_de_problemas2[2]['opção'])
-                    print(lista_de_problemas2[3]['opção'])
-                    print(lista_de_problemas2[4]['opção'])
-                    ajuda.lin()
-                    print('escolha das opção a cima de 0 até 4')
-                    #sleep(1)
-                    lista_de_problemas2 = escolha3 = int(input('Escreva a sua opção: '))
-                    print(f'Você escolheu: {escolha3}.')
-                    #Pergunta 4
-                    while escolha3 == 4:
-                        escolha3 = print('Voltando para as perguntas!!')
+                ajuda.lin()
+                print(lista_de_problemas2[0]['opção'])
+                print(lista_de_problemas2[1]['opção'])
+                print(lista_de_problemas2[2]['opção'])
+                print(lista_de_problemas2[3]['opção'])
+                print(lista_de_problemas2[4]['opção'])
+                ajuda.lin()
+                print('escolha das opção a cima de 0 até 4')
+                #sleep(1)
+                lista_de_problemas2 = escolha3 = int(input('Escreva a sua opção: '))
+                print(f'Você escolheu: {escolha3}.')
+                #Pergunta 4
+                while escolha3 == 4:
+                    escolha3 = print('Voltando para as perguntas!!')
                     #Pergunta 0
                     if lista_de_problemas2 == 0:
                         print('Espere 1 minuto.')
@@ -467,15 +467,15 @@ while True:
                 else:
                     print('Não encontramos o que você queria =-=*, poderia digitar novamente?')
                     #Fazer um loop
-                if escolha == proximo:
-                    print('\033[1m', 'Problema com o atendimento?', '\033[1m')
+            if escolha == proximo:
+                print('\033[1m', 'Problema com o atendimento?', '\033[1m')
                 lista_de_problemas2 = ( 
-                        {'opção': '(0)Problema com um atendente.'} ,
-                        {'opção': '(1)Atendimento ruim.'},
-                        {'opção': '(2)Atendente falou uma coisa e era outra.'},
-                        {'opção': '(3)Atendente não informal das taxas.'},
-                        {'opção': '(4)Voltar.'}, '\033[m'
-                    )  
+                    {'opção': '(0)Problema com um atendente.'} ,
+                    {'opção': '(1)Atendimento ruim.'},
+                    {'opção': '(2)Atendente falou uma coisa e era outra.'},
+                    {'opção': '(3)Atendente não informal das taxas.'},
+                    {'opção': '(4)Voltar.'}, '\033[m'
+                )  
                     #sleep(1)      
                 ajuda.lin()
                 print(lista_de_problemas2[0]['opção'])
