@@ -614,6 +614,11 @@ while True:
 
     elif resposta == 3:
         print('Saindo do sistema!')
+        print('...3')
+        #sleep(...1)
+        print('...2')
+        #sleep(1)
+        print('...1')
         break
     else:
         print('\033[31mERRO! Digite uma opção valida\033[m')
